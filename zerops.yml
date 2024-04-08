@@ -1,0 +1,8 @@
+zerops:
+  - setup: nextstatic
+    build:
+      base: nodejs@18
+      buildCommands:
+        - npm i
+        - npm run build
+      deploy: ./
