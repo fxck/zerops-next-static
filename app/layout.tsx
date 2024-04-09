@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Open_Sans } from 'next/font/google'
+import { Footer } from "@/components/Footer";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const opensans = Open_Sans({ subsets: ["latin"] });
@@ -15,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={opensans.className}>{children}</body>
+    <html lang="en" className={opensans.className}>
+      <body className="antialiased">
+        <div className="flex flex-col items-center">
+          <div className="flex-1 w-full flex flex-col gap-20 items-center">
+            <div className="flex-1 flex flex-col gap-20">{children}</div>
+            <div className="bottom-0">
+              <Footer />
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

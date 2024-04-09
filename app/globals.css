@@ -10,11 +10,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #ffffff ;
+  background: #ffffff;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+p {
+  color: #616A71;
 }
