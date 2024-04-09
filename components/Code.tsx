@@ -52,7 +52,7 @@ export function Code({ code }: { code: string }) {
       >
         {icon}
       </button>
-      <code className="text-[#3DC9B0] text-sm" >{code}</code>
+      <code className="text-[#3DC9B0] text-sm">{code}</code>
     </pre>
   );
 }
