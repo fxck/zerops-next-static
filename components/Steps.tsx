@@ -34,7 +34,7 @@ export function Steps() {
             <img
             className="rounded-lg my-6"
             alt="zerops dashboard"
-            src="zeropsdashboard.png"
+            src="dashboard.webp"
             width={845}
             draggable={false}
           />
