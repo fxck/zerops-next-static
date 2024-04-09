@@ -1,5 +1,4 @@
 import { Code } from "./Code";
-import Image from "next/image"
 
 const yamlcode = `project:
   name: zerops-nextjs
@@ -32,10 +31,10 @@ export function Steps() {
         <div className="pt-40 space-y-12 max-w-3xl">
           <div>
             <h2 className="text-[#292929] text-2xl font-semibold">Step 1: Go To Zerops Dashboard </h2>
-            <Image
+            <img
             className="rounded-lg my-6"
             alt="zerops dashboard"
-            src="zeropsdashboard.png"
+            src="dashboard.webp"
             width={845}
             draggable={false}
           />
