@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Footer } from "@/components/Footer";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const opensans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={opensans.className}>
+      <body className="antialiased">
+        <div className="flex flex-col items-center">
+          <div className="flex-1 w-full flex flex-col gap-20 items-center">
+            <div className="flex-1 flex flex-col gap-20">{children}</div>
+            <div className="bottom-0">
+              <Footer />
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
