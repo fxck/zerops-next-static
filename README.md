@@ -1,6 +1,6 @@
 # Zerops + Nextjs - Static
 
-[Header Image](public/ZeropsNextjs.png)
+![Header Image](public/ZeropsNextjs.png)
 
 A Static Next.js example for Zerops that you can deploy in 2 steps on zerops.
 
